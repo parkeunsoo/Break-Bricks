@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src=./breakbrick.js>  </script>
+
+	<meta charset="utf-8" />
+	<title>dapp 강의용 벽돌깨기 게임</title>
+	<style>
+		* { padding: 0; margin: 0; }
+		canvas { background: #eee; display: block; margin: 0 auto; }
+   #title{
+     margin-top:20%;
+     margin-left:48%;
+     margin-right:40%;
+   }
+  #restart{
+    margin-top:1%;
+    margin-left:48.5%;
+    width:100px;
+    height:30px;
+  }
+	</style>
+</head>
+<body>
+  <h1 id=title>게임 끝</h1>
+  <span id=revenue></span>
+  <button id=restart onclick = "pay()">restart</button>
+<script>  window.onload=function(){
+    startApp();
+    querybalance();
+    allrevenue();
+  }
+</script>
+</body>
+</html>

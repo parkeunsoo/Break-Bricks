@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src=./breakbrick.js> </script>
+	<meta charset="utf-8" />
+	<title>dapp 강의용 벽돌깨기 게임</title>
+	<style>
+		* { padding: 0; margin: 0; }
+		canvas { background: #eee; display: block; margin: 0 auto; }
+   #title{
+     margin-top:20%;
+     margin-left:47.5%;
+     margin-right:40%;
+   }
+  #reward{
+    margin-top:1%;
+    margin-left:48.5%;
+    width:100px;
+    height:30px;
+  }
+	</style>
+</head>
+<body>
+
+  <h1 id=title>보상받기</h1>
+  <button id=reward onclick = "transfer();">reward</button>
+  <script>  window.onload=function(){
+      startApp();
+    }
+  </script>
+</body>
+</html>
